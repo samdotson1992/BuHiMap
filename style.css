@@ -1,5 +1,13 @@
-body { margin:0; padding:0; }
+
+@font-face {
+  font-family: LemonMilk;
+  src: url("lemon_milk/LemonMilk.otf") format("opentype");
+}
+
+
+body { margin:0; padding:0;  font-family: 'LemonMilk';}
 #map { position:absolute; top:0; bottom:0; right: 0; left: 0; width:100%; }
+
 
 .tilelegend-map {
   width: 100%;
@@ -8,22 +16,26 @@ body { margin:0; padding:0; }
   height: 36px;
   line-height: 36px;
   width: 36px;
+
 }
 
 .sidebar-header {
 
-  background-color: rgb(50,171,240);
+  background-color: rgb(18, 48, 94);
   font-size: xx-large;
   font-family: 'Sigmar One', cursive;
   font-weight: bolder;
   letter-spacing: .15em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'LemonMilk';
 }
 
+.siderbar-content{
+  background-color: rgb(81, 81, 81);
+}
 
 .sidebar-tabs > ul > li > a {
 
-  background-color: #ff5462;
+  background-color: rgb(0, 0, 0);
 }
 
 #title {
@@ -31,6 +43,3 @@ body { margin:0; padding:0; }
   
 }
 
-body{
-  font-family: Courier;
-}
