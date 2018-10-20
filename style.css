@@ -1,0 +1,36 @@
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; right: 0; left: 0; width:100%; }
+
+.tilelegend-map {
+  width: 100%;
+}
+.leaflet-bar a, .leaflet-bar a:hover {
+  height: 36px;
+  line-height: 36px;
+  width: 36px;
+}
+
+.sidebar-header {
+
+  background-color: rgb(50,171,240);
+  font-size: xx-large;
+  font-family: 'Sigmar One', cursive;
+  font-weight: bolder;
+  letter-spacing: .15em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.sidebar-tabs > ul > li > a {
+
+  background-color: #ff5462;
+}
+
+#title {
+  font-size: xx-large;
+  
+}
+
+body{
+  font-family: Courier;
+}

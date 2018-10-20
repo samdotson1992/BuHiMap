@@ -1,0 +1,321 @@
+{
+    "currentVersion": 10.2,
+    "id": 0,
+    "name": "Doraville16.DBO.Restaus",
+    "type": "Feature Layer",
+    "description": "",
+    "geometryType": "esriGeometryPoint",
+    "copyrightText": "",
+    "parentLayer": null,
+    "subLayers": [],
+    "minScale": 0,
+    "maxScale": 0,
+    "drawingInfo": {
+     "renderer": {
+      "type": "uniqueValue",
+      "field1": "Region",
+      "field2": null,
+      "field3": null,
+      "fieldDelimiter": ", ",
+      "defaultSymbol": {
+       "type": "esriPMS",
+       "url": "7e636ba8756eb97a4fd80a84543de76a",
+       "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAN9JREFUKJGVkLFKA3EMxn/CYSYHs92iS92cCoWCk7g5KbYggnYplD6BWx/BVUQcfACf4UY3RbqX0iVTA24NKHXwLxzHHWqm5CO/8H3J+GdldaKIHEZE8WcAuAM6wPuvgKp23X0POAEe64BdVd3+Edx9mNpLVX0r2fw0s2kGrN39AWhXjh25+2vqlyJyAUwzYAEcJN9XNXlegLOImJczrIABsAmcl5bn6diqKfR+Zd4BtpqAVgKe8zwfmdkE6PH9rfs64FREbiLi2sw+gD4wBo6bgKeImFUs3QIFsAGsAb4A57xBO8rkvlkAAAAASUVORK5CYII=",
+       "contentType": "image/png",
+       "width": 9,
+       "height": 9,
+       "angle": 0,
+       "xoffset": 0,
+       "yoffset": 0
+      },
+      "defaultLabel": "<all other values>",
+      "uniqueValueInfos": [
+       {
+        "symbol": {
+         "type": "esriPMS",
+         "url": "32f4a74c52ad4a723612bb3e1311588b",
+         "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAQ5JREFUKJGVj7FKA0EURc9slgwWFm4XyMYU2qUSBCGV2FlFYoYgaBAE8Qvs/ARbCSKSQpAV8RNS2imSPixOYCsXFEQXszsWRg1mQH3Ve/fdA/e6/HNcm6i0XA78pPtnAGhvRyyeFnj8FVDaW4J4/nlIDehMAHXNbA5v5lNwRLyTGQA2lfbuvnWZnhejnuuAgfgEWAAYmQFWIL4d7Q+pkRtAz73wuW+FVF9ytIEtS5+bN0H9qpiEXx06ZV6BltLkgeaYOZxKqQYff2vpyo+79OQwDRagOWAuM1SAa0cUdjMTHQDrUlADjieA1LAmkIdBmuxTjoZAQ2n2gFUrkDdcnpWS/niewOeoMaCLQSAwAO/U11St9qJJOwAAAABJRU5ErkJggg==",
+         "contentType": "image/png",
+         "width": 9,
+         "height": 9,
+         "angle": 0,
+         "xoffset": 0,
+         "yoffset": 0
+        },
+        "value": "American",
+        "label": "American",
+        "description": ""
+       },
+       {
+        "symbol": {
+         "type": "esriPMS",
+         "url": "b0ddd033bda3a2a5ff933671d5a57756",
+         "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAQdJREFUKJGVjzFKA2EQhb+X/Gxn4QW00S5VYF0hlYiNVUQFERJdFMUTiI1HsJUouhFrz5BSN4GIpJdgZWOhjQGTHZuQRHZBnWqYmW/ee45/lssaWhQvKQwafwZANbto+Trw338FrB4vYszjJWXgJgVY9DALmh4Bxr4ATBWL4qexaG6gXb/jyOeNgV0BRQCNny2DHof9GyTbQMep6r/Ybbtk/a+aUDUjUJuEde0F3VEGVYo9YCeJmp5ga+K4i3Ol4T4dWkZh0hMww2dvCkgDVo/nMArAPdIhiZ0iNvBcGbhMKySsmexMrx/HOlnpA5sWNY8wVrMBcZcLg+cfFsOFc7tuNQyTkAF8A9whWPqp24WDAAAAAElFTkSuQmCC",
+         "contentType": "image/png",
+         "width": 9,
+         "height": 9,
+         "angle": 0,
+         "xoffset": 0,
+         "yoffset": 0
+        },
+        "value": "East Asian",
+        "label": "East Asian",
+        "description": ""
+       },
+       {
+        "symbol": {
+         "type": "esriPMS",
+         "url": "f6bf7e05e2d1c686ca67e27973acd4a5",
+         "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAQhJREFUKJGVjz9Lw3AYhJ+3CW4ODupmTdGtkyAIncTNqaKCCNpFEEdL/dPFtYPSjlLEoR/Az9DRTSndmx+u4uAmmOQcNFJMQH3Hu3uO93z+eX6e2Ai1ehVY/88A0G2OtNwq2euvQN1pBViMjCrQywCnoYoyplJB6AAMwd6J0yDVIyPuFG3oe0Lvxi2w9GlZmlkTPAIk8OIl7AJDv1Wyp5pTZQZ1he3n7HnwYPMyMPe9oTdvb0CtESYTmO2Mhd0zVL78nNFm5R/tc7MFJoEscO60EEE5gXsZh37ChYwtxVSBmwwQwwaoPY2dNYsWAdv1UEcFWM8FInHXCQqj8X/agV0fO/WRDDMBfABCRVonQR249QAAAABJRU5ErkJggg==",
+         "contentType": "image/png",
+         "width": 9,
+         "height": 9,
+         "angle": 0,
+         "xoffset": 0,
+         "yoffset": 0
+        },
+        "value": "European",
+        "label": "European",
+        "description": ""
+       },
+       {
+        "symbol": {
+         "type": "esriPMS",
+         "url": "d09ef70f7e0af71833aff9ba17bcd29a",
+         "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAQBJREFUKJGVj7FKA1EQRc+DZTeNRbabEHQL06USBCGV2FlFVJCA2gjiF9j5CbYSxMIP8BtS2imSXhaLnTQu2PmCvrEw0WAW1Glm5g5nuDfinxVViarJuogf/BkA+qqsivDyK6CarpmVLefoAtdzwGjEUghpfSqYlUefnf2iSB+munPJu4gOIzMMyitg5cezDSjvJ/MzJD1gGInwlOd04pg+cFCR5y4EtptNn39lyDJegcOiIAb2vm2Qe09ncq8M3Z5dzFis1ViACkCVZTPawK1zcmymZ8BOCHSByznAjC1Izsdjf5pl+gbsqnJixmYlANw0Gv5x1pIIF6oMzHDOYQAftCJd0blXJUMAAAAASUVORK5CYII=",
+         "contentType": "image/png",
+         "width": 9,
+         "height": 9,
+         "angle": 0,
+         "xoffset": 0,
+         "yoffset": 0
+        },
+        "value": "Global",
+        "label": "Global",
+        "description": ""
+       },
+       {
+        "symbol": {
+         "type": "esriPMS",
+         "url": "9660b6674d6d1a3261950161f529d7cd",
+         "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAARZJREFUKJGVj71KwwAUhb/bxvjTivgCuujWSRCETuLmVFFBhFaDovgEkiVpXLq5ShVNpbPP0NFNke5SnFwcCm3aIcl1aaWagnqny7n3O5xj8M8xxom+11m33GzjzwCxVK/t3upJZbr9K1Dzumsas2xOaAG4TwB+ubMIqfmhoDHHoKho0S8HL0NdVKNDL9M00ik0ivQWWPlhtoHq82D/QNgHmkbJyb7VK+182DeqQGlMo6dYdfvIy7a+OhTtuT5w4DuBiejeyHPLmArzg3uytIrm5Lv7Qi9KzwJJoOYGS4rmgEeB0xgcgR0zlAJwkwBidEuEy/fJmXPblhDY9Z3umcLmWEDSPFhO5nU0j3WRubpzgwaogCjAJxPxYvS/+yLlAAAAAElFTkSuQmCC",
+         "contentType": "image/png",
+         "width": 9,
+         "height": 9,
+         "angle": 0,
+         "xoffset": 0,
+         "yoffset": 0
+        },
+        "value": "Latin American",
+        "label": "Latin American",
+        "description": ""
+       },
+       {
+        "symbol": {
+         "type": "esriPMS",
+         "url": "f8782f3ec2759e454ae91b023adea3dd",
+         "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAQFJREFUKJGVkDFLwwAQhb9Lg5k6mM1FF906CYLQSdycFBVEqC7SYtVZXPwJTrU2ioM4+xs6uinSvRSXTAYKBQ3aPJfQqgmoNx139727dy7/DDevqIa3ZIdx+88ADoEuWbAq/V8BtfxFkmiOIavATQZQixkSf3IEJNGeAYiKmv7TWMkb2kHYcXlHFKJrYB7AxmLLED2m+QvmbQMd14541i1lDQhM7OQ4egDWrR73Rh6swhuwm5wzYcbWl+EeRcppP2vajNIP9WleKUIOoAazQAm4R1M1nPAUsZF+6yq7ocCa5J1ZPz62k/AD2FSTfcRKPuBw59Ti7rcT61wooC0wAwF8Ah+0U624XOA+AAAAAElFTkSuQmCC",
+         "contentType": "image/png",
+         "width": 9,
+         "height": 9,
+         "angle": 0,
+         "xoffset": 0,
+         "yoffset": 0
+        },
+        "value": "South/Southeast Asian",
+        "label": "South/Southeast Asian",
+        "description": ""
+       }
+      ]
+     },
+     "transparency": 0,
+     "labelingInfo": null
+    },
+    "defaultVisibility": true,
+    "extent": {
+     "xmin": 2259682.975948583,
+     "ymin": 1414938.0215332857,
+     "xmax": 2270823.073812326,
+     "ymax": 1429360.3563635326,
+     "spatialReference": {
+      "wkid": 102667,
+      "latestWkid": 2240
+     }
+    },
+    "hasAttachments": false,
+    "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+    "displayField": "Name",
+    "typeIdField": null,
+    "fields": [
+     {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "domain": null
+     },
+     {
+      "name": "OID_",
+      "type": "esriFieldTypeInteger",
+      "alias": "OID_",
+      "domain": null
+     },
+     {
+      "name": "Name",
+      "type": "esriFieldTypeString",
+      "alias": "Name",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "FolderPath",
+      "type": "esriFieldTypeString",
+      "alias": "FolderPath",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "SymbolID",
+      "type": "esriFieldTypeInteger",
+      "alias": "SymbolID",
+      "domain": null
+     },
+     {
+      "name": "AltMode",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "AltMode",
+      "domain": null
+     },
+     {
+      "name": "Base",
+      "type": "esriFieldTypeDouble",
+      "alias": "Base",
+      "domain": null
+     },
+     {
+      "name": "Snippet",
+      "type": "esriFieldTypeString",
+      "alias": "Snippet",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "PopupInfo",
+      "type": "esriFieldTypeString",
+      "alias": "PopupInfo",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "HasLabel",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "HasLabel",
+      "domain": null
+     },
+     {
+      "name": "LabelID",
+      "type": "esriFieldTypeInteger",
+      "alias": "LabelID",
+      "domain": null
+     },
+     {
+      "name": "LabelJoin",
+      "type": "esriFieldTypeInteger",
+      "alias": "LabelJoin",
+      "domain": null
+     },
+     {
+      "name": "Label",
+      "type": "esriFieldTypeInteger",
+      "alias": "Label",
+      "domain": null
+     },
+     {
+      "name": "Name_1",
+      "type": "esriFieldTypeString",
+      "alias": "Name_1",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "Region",
+      "type": "esriFieldTypeString",
+      "alias": "Region",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "Origin",
+      "type": "esriFieldTypeString",
+      "alias": "Origin",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "Shopping_C",
+      "type": "esriFieldTypeString",
+      "alias": "Shopping_C",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "Website",
+      "type": "esriFieldTypeString",
+      "alias": "Website",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "Facebook",
+      "type": "esriFieldTypeString",
+      "alias": "Facebook",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "Instagram",
+      "type": "esriFieldTypeString",
+      "alias": "Instagram",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "Address",
+      "type": "esriFieldTypeString",
+      "alias": "Address",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "City",
+      "type": "esriFieldTypeString",
+      "alias": "City",
+      "length": 254,
+      "domain": null
+     },
+     {
+      "name": "ZIP",
+      "type": "esriFieldTypeInteger",
+      "alias": "ZIP",
+      "domain": null
+     },
+     {
+      "name": "Shape",
+      "type": "esriFieldTypeGeometry",
+      "alias": "Shape",
+      "domain": null
+     }
+    ],
+    "relationships": [],
+    "canModifyLayer": false,
+    "canScaleSymbols": false,
+    "hasLabels": false,
+    "capabilities": "Map,Query,Data",
+    "maxRecordCount": 1000,
+    "supportsStatistics": true,
+    "supportsAdvancedQueries": true,
+    "hasZ": true,
+    "hasM": true,
+    "supportedQueryFormats": "JSON, AMF",
+    "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+    "useStandardizedQueries": true
+   }

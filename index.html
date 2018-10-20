@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>BuHi Map</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="Leaflet.TileLegend/Leaflet.TileLegend.css" />
+    <script src="Leaflet.TileLegend/Leaflet.TileLegend.js"></script>
+
+    <link rel ="stylesheet" href="leaflet-panel-layers\src\leaflet-panel-layers.css"/>
+    <script src="leaflet-panel-layers/src/leaflet-panel-layers.js"></script>
+
+    <link rel="stylesheet" href="Leaflet.awesome-markers/dist/leaflet.awesome-markers.css">
+
+
+    <script src="Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+
+    <link rel="stylesheet" href="sidebar-v2/css/leaflet-sidebar.css" />
+    <script src="geojson.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="sidebar-v2/js/leaflet-sidebar.js"></script>
+
+</head>
+<body>
+  <div id="sidebar" class="sidebar collapsed">
+    <!-- Nav tabs -->
+    <div class="sidebar-tabs">
+        <ul  role="tablist">
+            <li ><a  href="#home" role="tab"><i id="desc" class="fa fa-bars"></i></a></li>
+            </ul>
+    </div>
+
+    <!-- Tab panes -->
+    <div class="sidebar-content">
+        <div class="sidebar-pane" id="home">
+            <h1 class="sidebar-header">
+                BuHi Map
+                <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+            </h1>
+
+            <p id = "text" class="lorem"></p>
+
+          </div>
+
+    </div>
+</div>
+
+
+
+<div id="map"></div>
+<script>
+
+var startPoint = [33.892931, -84.284724];
+var map = L.map('map').setView(startPoint, 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+function onEachFeature(feature, layer) {
+    // does this feature have a property named popupContent?
+    if (feature.properties && feature.properties.popupContent) {
+        layer.bindPopup(feature.properties.popupContent);
+    }
+}
+
+function createCustomIcon (feature, latlng) {
+
+var redMarker = L.AwesomeMarkers.icon({
+icon: feature.properties.icon,
+markerColor: feature.properties.markerColor
+});
+
+return L.marker(latlng, { icon: redMarker })
+}
+
+// create an options object that specifies which function will called on each feature
+let myLayerOptions = {
+pointToLayer: createCustomIcon,
+onEachFeature: onEachFeature,
+}
+
+L.geoJSON(stores, myLayerOptions).on('click', markerOnClick).addTo(map);
+
+L.geoJSON(food, myLayerOptions).on('click', markerOnClick).addTo(map);
+
+L.geoJSON(dessert, myLayerOptions).on('click', markerOnClick).addTo(map);
+
+L.geoJSON(BuHi_buffer, myLayerOptions).on('click', markerOnClick).addTo(map);
+
+var sidebar = L.control.sidebar('sidebar').addTo(map);
+
+function markerOnClick(e) {
+            map.setView([e.latlng.lat, e.latlng.lng], 16);
+           document.getElementById("text").innerHTML = '<div id="place_info" >'  +
+              "<br>  <div> <strong> <hl id='title'>" +  e.layer.feature.properties.name  + "</hl> </strong> <br> </div>" + '<br> <a id="link" href=' + e.layer.feature.properties.url + ">" + e.layer.feature.properties.url + "</a> <br> <br> <div  id='desc'>   <p>" +  e.layer.feature.properties.desc  + "</p> </div> </div>"  ;
+                sidebar.open()
+                document.getElementById("desc").click()
+        }
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
