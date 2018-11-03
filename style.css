@@ -33,7 +33,7 @@ body { margin:0; padding:0;  font-family: 'LemonMilk';}
   background-color: rgb(81, 81, 81);
 }
 
-.sidebar-tabs > ul > li > a {
+.sidebar-tabs > ul > li > a 
 
   background-color: rgb(0, 0, 0);
 }
