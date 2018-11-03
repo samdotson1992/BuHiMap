@@ -1,3 +1,12 @@
 [submodule "Leaflet.TileLegend"]
 	path = Leaflet.TileLegend
 	url = https://github.com/yohanboniface/Leaflet.TileLegend
+[submodule "sidebar-v2"]
+	path = sidebar-v2
+	url = https://github.com/Turbo87/sidebar-v2
+[submodule "leaflet-panel-layers"]
+	path = leaflet-panel-layers
+	url = https://github.com/stefanocudini/leaflet-panel-layers.git
+[submodule "Leaflet.awesome-markers"]
+	path = Leaflet.awesome-markers
+	url = https://github.com/lvoogdt/Leaflet.awesome-markers.git
