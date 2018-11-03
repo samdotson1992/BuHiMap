@@ -12,9 +12,10 @@ dessert = {
     "name": "Sweet Hut Bakery", 
     "url": "https://www.sweethutbakery.com/",
     "popupContent": "Sweet Hut",
-    "icon" : "ice-cream",
-    "markerColor": "red",
-    "prefix": "",
+    "icon" :  "cake",
+    "iconColor" : "red",
+    "markerColor": "blue",
+    "prefix": "glyphicon",
     "desc" : "Featuring over a hundred bakery products and our signature bubble teas and drinks at a very friendly cost in a modern and cozy environment with free WIFI access, we look up to become your favorite place other than home. We are your friends. We are your family. We are your sweet hut."
 
   }
@@ -30,11 +31,30 @@ dessert = {
     "url": "https://www.rollitupicecream.com/",
     "popupContent": "Roll it Up",
     "icon" :  "ice-cream",
-    "markerColor": "red",
+    "iconColor" : "red",
+    "markerColor": "blue",
     "prefix": "",
     "desc" : "At Roll It Up, we make the creamiest ice cream daily using only the freshest and most natural of ingredients. We always keep an eye on the latest dessert trends so we can immediately bring it to you, our customers. Our toppings include a wide variety of fresh fruits and premium ice cream toppings. We feel that going out for ice cream should be an experience and that is what you get when you visit our store."
   }
 },
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates":  [-84.264063, 33.911180]
+  },
+  "properties": {
+    "name": "White Windmill Bakery and Cafe",
+    "url": "https://www.wwindmill.com/",
+    "popupContent": "White Windmill Bakery and Cafe",
+    "icon" :  "ice-cream",
+    "iconColor" : "red",
+    "markerColor": "blue",
+    "prefix": "",
+    "desc" : "At White Windmill, we are serious about our baking. We are committed to bring freshly baked breads to our customers everyday. That's why our products are baked daily with utmost care. There are dozens of different baked goods at White Windmill to suit your taste, from something as simple as a loaf of bread to Asian-inspired pastries. Come visit us to experience our full selection."
+  }
+},
+
 ]
 }
 
@@ -52,12 +72,14 @@ food = {
           "name": "Food Terminal",
           "url": "https://foodterminal.com",
           "popupContent": "Food Terminal",
-          "icon" : "pizza",
+          "icon" : "cutlery",
+          "iconColor" : "white",
           "markerColor": "red",
-          "prefix": "",
+          "prefix": "glyphicon",
           "desc" : "Asian style street food served up in a modern atmosphere"
         }
       },
+
       {
         "type": "Feature",
         "geometry": {
@@ -68,17 +90,38 @@ food = {
           "name": "Lee's Bakery",
           "url": "http://places.singleplatform.com/lees-bakery/menu?ref=google",
           "popupContent": "Lee's Bakery", 
-          "icon" : "sqaure",
+          "icon" : "cutlery",
+          "iconColor" : "white",
           "markerColor": "red",
-          "prefix": "fas fa",
+          "prefix": "glyphicon",
           "desc": "Fresh baked bread, banh mi sandwiches, pho and more."
         }
+      },
+      
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates":  [-84.293404, 33.877401]
+        },
+        "properties": {
+          "name": "Pho 24",
+          "url": "http://pho24chamblee.com/",
+          "popupContent": "Pho 24", 
+          "icon" : "cutlery",
+          "iconColor" : "white",
+          "markerColor": "red",
+          "prefix": "glyphicon",
+          "desc": "Located in a strip mall, this casual Vietnamese noodle house serves pho 24 hours a day, every day."
+        }
       }
+
+
+
 
       
     ]
   }
-  
   stores = {
     "type": "FeatureCollection",
     "features": [

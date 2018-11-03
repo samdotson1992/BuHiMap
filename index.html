@@ -67,21 +67,36 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+var m = false
 function onEachFeature(feature, layer) {
     // does this feature have a property named popupContent?
     if (feature.properties && feature.properties.popupContent) {
         layer.bindPopup(feature.properties.popupContent);
+        layer.on('mouseover', function (e) {
+            m = true
+            this.openPopup();
+        });
+        layer.on('click', function(e) {
+            m = false
+            this.openPopup();
+        });
+    
+        layer.on('mouseout', function (e) {
+            if (m) {
+            this.closePopup(); }
+        });
     }
 }
 
 function createCustomIcon (feature, latlng) {
 
-var redMarker = L.AwesomeMarkers.icon({
+var Marker = L.AwesomeMarkers.icon({
 icon: feature.properties.icon,
+iconColor: feature.properties.iconColor,
 markerColor: feature.properties.markerColor
 });
 
-return L.marker(latlng, { icon: redMarker })
+return L.marker(latlng, { icon: Marker })
 }
 
 // create an options object that specifies which function will called on each feature
