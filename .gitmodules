@@ -13,3 +13,6 @@
 [submodule "L.Control.ZoomBar"]
 	path = L.Control.ZoomBar
 	url = https://github.com/elrobis/L.Control.ZoomBar.git
+[submodule "leaflet-locatecontrol"]
+	path = leaflet-locatecontrol
+	url = https://github.com/domoritz/leaflet-locatecontrol.git
