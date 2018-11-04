@@ -10,3 +10,6 @@
 [submodule "Leaflet.awesome-markers"]
 	path = Leaflet.awesome-markers
 	url = https://github.com/lvoogdt/Leaflet.awesome-markers.git
+[submodule "L.Control.ZoomBar"]
+	path = L.Control.ZoomBar
+	url = https://github.com/elrobis/L.Control.ZoomBar.git
