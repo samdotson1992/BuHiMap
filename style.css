@@ -13,7 +13,8 @@ body {
 html, body, #map {
   height: 100%;
   width: 100vw;
-  font-family: 'LemonMilk'
+  font-family: 'LemonMilk';
+  letter-spacing: .1vw
 }
 
 .tilelegend-map {
@@ -31,22 +32,22 @@ html, body, #map {
   background-color: rgb(18, 48, 94);
   font-size: xx-large;
   font-family: 'Sigmar One', cursive;
-  font-weight: bolder;
-  letter-spacing: .15em;
+  font-weight: 700;
+  letter-spacing: .21em;
   font-family: 'LemonMilk';
+
+
 }
 
 .siderbar-content{
   background-color: rgb(81, 81, 81);
 }
 
-.sidebar-tabs > ul > li > a 
 
-  background-color: rgb(0, 0, 0);
-}
 
 #title {
   font-size: xx-large;
+  letter-spacing: .2em;
+  font-weight: 500
   
 }
-
